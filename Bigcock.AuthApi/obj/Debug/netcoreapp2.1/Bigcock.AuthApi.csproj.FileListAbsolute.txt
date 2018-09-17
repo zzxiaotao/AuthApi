@@ -1,0 +1,13 @@
+G:\github\MyPro\Bigcock\Bigcock.AuthApi\bin\Debug\netcoreapp2.1\Bigcock.AuthApi.deps.json
+G:\github\MyPro\Bigcock\Bigcock.AuthApi\bin\Debug\netcoreapp2.1\Bigcock.AuthApi.runtimeconfig.json
+G:\github\MyPro\Bigcock\Bigcock.AuthApi\bin\Debug\netcoreapp2.1\Bigcock.AuthApi.runtimeconfig.dev.json
+G:\github\MyPro\Bigcock\Bigcock.AuthApi\bin\Debug\netcoreapp2.1\Bigcock.AuthApi.dll
+G:\github\MyPro\Bigcock\Bigcock.AuthApi\obj\Debug\netcoreapp2.1\Bigcock.AuthApi.csproj.CoreCompileInputs.cache
+G:\github\MyPro\Bigcock\Bigcock.AuthApi\obj\Debug\netcoreapp2.1\Bigcock.AuthApi.RazorAssemblyInfo.cache
+G:\github\MyPro\Bigcock\Bigcock.AuthApi\obj\Debug\netcoreapp2.1\Bigcock.AuthApi.RazorAssemblyInfo.cs
+G:\github\MyPro\Bigcock\Bigcock.AuthApi\obj\Debug\netcoreapp2.1\Bigcock.AuthApi.AssemblyInfoInputs.cache
+G:\github\MyPro\Bigcock\Bigcock.AuthApi\obj\Debug\netcoreapp2.1\Bigcock.AuthApi.AssemblyInfo.cs
+G:\github\MyPro\Bigcock\Bigcock.AuthApi\obj\Debug\netcoreapp2.1\Bigcock.AuthApi.RazorTargetAssemblyInfo.cache
+G:\github\MyPro\Bigcock\Bigcock.AuthApi\bin\Debug\netcoreapp2.1\Bigcock.AuthApi.pdb
+G:\github\MyPro\Bigcock\Bigcock.AuthApi\obj\Debug\netcoreapp2.1\Bigcock.AuthApi.dll
+G:\github\MyPro\Bigcock\Bigcock.AuthApi\obj\Debug\netcoreapp2.1\Bigcock.AuthApi.pdb
