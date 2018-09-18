@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bigcock.AuthApi", "Bigcock.AuthApi\Bigcock.AuthApi.csproj", "{35EB1AB8-FC1F-471B-8CA1-A224376E619A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bigcock.AuthApi", "Bigcock.AuthApi\Bigcock.AuthApi.csproj", "{35EB1AB8-FC1F-471B-8CA1-A224376E619A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bigcock.Data", "Bigcock.Data\Bigcock.Data.csproj", "{AD8881F0-31EC-4221-B63F-CBBAE4762D32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bigcock.IModuleServices.UserManager", "Bigcock.IModuleServices.UserManager\Bigcock.IModuleServices.UserManager.csproj", "{BA3D4EF0-900A-4E15-88B2-A688D950D8C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bigcock.Modules.UserManager", "Bigcock.Modules.UserManager\Bigcock.Modules.UserManager.csproj", "{3539C221-B9D2-4277-9596-E56D6E66D7A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bigcock.Sevices.server", "Bigcock.Sevices.server\Bigcock.Sevices.server.csproj", "{948CE72F-2335-41D5-B903-D614143C6360}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{35EB1AB8-FC1F-471B-8CA1-A224376E619A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35EB1AB8-FC1F-471B-8CA1-A224376E619A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35EB1AB8-FC1F-471B-8CA1-A224376E619A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD8881F0-31EC-4221-B63F-CBBAE4762D32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD8881F0-31EC-4221-B63F-CBBAE4762D32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD8881F0-31EC-4221-B63F-CBBAE4762D32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD8881F0-31EC-4221-B63F-CBBAE4762D32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA3D4EF0-900A-4E15-88B2-A688D950D8C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA3D4EF0-900A-4E15-88B2-A688D950D8C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA3D4EF0-900A-4E15-88B2-A688D950D8C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA3D4EF0-900A-4E15-88B2-A688D950D8C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3539C221-B9D2-4277-9596-E56D6E66D7A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3539C221-B9D2-4277-9596-E56D6E66D7A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3539C221-B9D2-4277-9596-E56D6E66D7A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3539C221-B9D2-4277-9596-E56D6E66D7A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{948CE72F-2335-41D5-B903-D614143C6360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{948CE72F-2335-41D5-B903-D614143C6360}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{948CE72F-2335-41D5-B903-D614143C6360}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{948CE72F-2335-41D5-B903-D614143C6360}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

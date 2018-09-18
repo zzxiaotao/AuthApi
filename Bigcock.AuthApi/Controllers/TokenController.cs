@@ -13,8 +13,6 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace Bigcock.AuthApi.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
     public class TokenController : ControllerBase
     {
         [HttpPost]

@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.3.0" />
+    <PackageReference Include="microsoft.extensions.dependencyinjection" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="2.1.1" />
+    <PackageReference Include="Surging" Version="0.9.0.4" />
+    <PackageReference Include="Surging.Core.Caching" Version="0.9.0.2" />
+    <PackageReference Include="Surging.Core.Codec.MessagePack" Version="0.9.0.2" />
+    <PackageReference Include="Surging.Core.Consul" Version="0.9.0.2" />
+    <PackageReference Include="Surging.Core.DotNetty" Version="0.9.0.2" />
+    <PackageReference Include="Surging.Core.EventBusRabbitMQ" Version="0.9.0.2" />
+    <PackageReference Include="Surging.Core.Log4net" Version="0.9.0.2" />
+    <PackageReference Include="Surging.Core.Nlog" Version="0.9.0.2" />
+    <PackageReference Include="Surging.Core.Protocol.Http" Version="0.9.0.2" />
+    <PackageReference Include="Surging.Core.Zookeeper" Version="0.9.0.2" />
+    <PackageReference Include="surging.websocketcore" Version="1.9.1" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bigcock.Data\Bigcock.Data.csproj" />
+    <ProjectReference Include="..\Bigcock.IModuleServices.UserManager\Bigcock.IModuleServices.UserManager.csproj" />
+    <ProjectReference Include="..\Bigcock.Modules.UserManager\Bigcock.Modules.UserManager.csproj" />
+  </ItemGroup>
+
+</Project>

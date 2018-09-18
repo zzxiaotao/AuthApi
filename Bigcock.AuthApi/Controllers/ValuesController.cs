@@ -7,9 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Bigcock.AuthApi.Controllers
 {
-    [Authorize] 
-    [Route("api/[controller]")]
-    [ApiController]
+    //[Authorize] 
     public class ValuesController : ControllerBase
     {
         // GET api/values
@@ -43,5 +41,7 @@ namespace Bigcock.AuthApi.Controllers
         public void Delete(int id)
         {
         }
+        
+
     }
 }
