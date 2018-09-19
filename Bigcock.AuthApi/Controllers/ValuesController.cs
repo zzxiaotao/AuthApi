@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Bigcock.AuthApi.Controllers
 {
-    //[Authorize] 
+    [Authorize] 
     public class ValuesController : ControllerBase
     {
         // GET api/values
