@@ -16,4 +16,8 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Bigcock.AuthApiCore\Bigcock.AuthApiCore.csproj" />
+  </ItemGroup>
+
 </Project>

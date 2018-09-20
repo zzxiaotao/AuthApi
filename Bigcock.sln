@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bigcock.Modules.UserManager
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bigcock.Sevices.server", "Bigcock.Sevices.server\Bigcock.Sevices.server.csproj", "{948CE72F-2335-41D5-B903-D614143C6360}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bigcock.AuthApiCore", "Bigcock.AuthApiCore\Bigcock.AuthApiCore.csproj", "{160AF008-3D8D-421F-8CB6-992952D6CAAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bigcock.IAuthCode", "Bigcock.IAuthCode\Bigcock.IAuthCode.csproj", "{DE9DBB76-1375-4864-96C0-3FD00D2CFAA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{948CE72F-2335-41D5-B903-D614143C6360}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{948CE72F-2335-41D5-B903-D614143C6360}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{948CE72F-2335-41D5-B903-D614143C6360}.Release|Any CPU.Build.0 = Release|Any CPU
+		{160AF008-3D8D-421F-8CB6-992952D6CAAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{160AF008-3D8D-421F-8CB6-992952D6CAAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{160AF008-3D8D-421F-8CB6-992952D6CAAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{160AF008-3D8D-421F-8CB6-992952D6CAAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE9DBB76-1375-4864-96C0-3FD00D2CFAA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE9DBB76-1375-4864-96C0-3FD00D2CFAA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE9DBB76-1375-4864-96C0-3FD00D2CFAA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE9DBB76-1375-4864-96C0-3FD00D2CFAA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
