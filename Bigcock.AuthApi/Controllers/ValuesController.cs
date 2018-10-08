@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Bigcock.AuthApi.Controllers
 {
-    [Authorize] 
+    //[Authorize] 
     public class ValuesController : ControllerBase
     {
         // GET api/values
@@ -28,6 +28,7 @@ namespace Bigcock.AuthApi.Controllers
         [HttpPost]
         public void Post([FromBody] string value)
         {
+
         }
 
         // PUT api/values/5
