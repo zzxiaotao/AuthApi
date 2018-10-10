@@ -9,8 +9,8 @@ namespace Bigcock.AuthApiCore
 {
     public class UserService : IUserService
     {
-        private readonly UserDB _userRepostiory;
-        public UserService(UserDB userRepostiory)
+        private readonly UsersRepository _userRepostiory;
+        public UserService(UsersRepository userRepostiory)
         {
             _userRepostiory = userRepostiory;
         }
@@ -24,7 +24,7 @@ namespace Bigcock.AuthApiCore
             throw new NotImplementedException();
         }
     }
-    public class UserDB
+    public class UsersRepository
     {
         /// <summary>
         /// 添加用户

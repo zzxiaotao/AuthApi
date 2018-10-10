@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Bigcock.AuthApiCore\Bigcock.AuthApiCore.csproj" />
+    <ProjectReference Include="..\Bigcock.Data\Bigcock.Data.csproj" />
   </ItemGroup>
 
 </Project>

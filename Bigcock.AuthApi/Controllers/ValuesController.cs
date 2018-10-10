@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Bigcock.AuthApiCore;
+using Bigcock.Data.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,9 +13,18 @@ namespace Bigcock.AuthApi.Controllers
     public class ValuesController : ControllerBase
     {
         // GET api/values
+        public UserService _user;
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
+            var user = new User
+            {
+                CreateTime = DateTime.Now,
+                Id = 1,
+                Name = "",
+                Sex = "男"
+            };
+            _user.AddUser(user);
             return new string[] { "value1", "value2" };
         }
 

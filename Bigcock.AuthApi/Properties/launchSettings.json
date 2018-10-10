@@ -26,5 +26,8 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     }
+  },
+  "ConnectionStrings": {
+    "SqlServerStr": "${SqlServerStr}|Server=.;Database=Bigcock;User ID=sa;Password=123456;Trusted_Connection=False;"
   }
 }
