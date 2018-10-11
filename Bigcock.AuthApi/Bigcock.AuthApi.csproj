@@ -9,6 +9,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.8.1" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.3.0" />
     <PackageReference Include="IdentityModel" Version="3.9.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="2.1.1" />
@@ -18,7 +20,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Bigcock.AuthApiCore\Bigcock.AuthApiCore.csproj" />
-    <ProjectReference Include="..\Bigcock.Data\Bigcock.Data.csproj" />
   </ItemGroup>
 
 </Project>

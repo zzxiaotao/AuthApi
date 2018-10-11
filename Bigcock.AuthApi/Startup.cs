@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Loader;
 using System.Text;
 using System.Threading.Tasks;
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
 using Bigcock.Data.Models;
 using IdentityModel;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -27,9 +30,9 @@ namespace Bigcock.AuthApi
         }
 
         public IConfiguration Configuration { get; }
-
+        public static IContainer AutofacContainer;
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             
@@ -70,11 +73,15 @@ namespace Bigcock.AuthApi
             services.AddDbContext<BigcockContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("BigcockContext")));
 
-            
+            var containerBuilder = new ContainerBuilder();
+            containerBuilder.Populate(services);
+            containerBuilder.RegisterModule<DefaultModuleRegister>();
+            AutofacContainer = containerBuilder.Build();
+            return new AutofacServiceProvider(AutofacContainer);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env,IApplicationLifetime appLifetime)
         {
             if (env.IsDevelopment())
             {
@@ -92,6 +99,24 @@ namespace Bigcock.AuthApi
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+            appLifetime.ApplicationStopped.Register(()=> { AutofacContainer.Dispose(); });
+        }
+        public class DefaultModuleRegister : Module
+        {
+            protected override void Load(ContainerBuilder builder)
+            {
+                //注册当前程序集中以“Ser”结尾的类,暴漏类实现的所有接口，生命周期为PerLifetimeScope
+                builder.RegisterAssemblyTypes(System.Reflection.Assembly.GetExecutingAssembly()).Where(t => t.Name.EndsWith("Service")).AsImplementedInterfaces().InstancePerLifetimeScope();
+                builder.RegisterAssemblyTypes(System.Reflection.Assembly.GetExecutingAssembly()).Where(t => t.Name.EndsWith("Repository")).AsImplementedInterfaces().InstancePerLifetimeScope();
+                //注册所有"MyApp.Repository"程序集中的类
+                //builder.RegisterAssemblyTypes(GetAssembly("MyApp.Repository")).AsImplementedInterfaces();
+            }
+
+            public static System.Reflection.Assembly GetAssembly(string assemblyName)
+            {
+                var assembly = AssemblyLoadContext.Default.LoadFromAssemblyPath(AppContext.BaseDirectory + $"{assemblyName}.dll");
+                return assembly;
+            }
         }
     }
 }

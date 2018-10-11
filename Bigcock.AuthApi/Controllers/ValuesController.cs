@@ -2,18 +2,26 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Autofac;
 using Bigcock.AuthApiCore;
 using Bigcock.Data.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 
 namespace Bigcock.AuthApi.Controllers
 {
     //[Authorize] 
     public class ValuesController : ControllerBase
     {
+        private UserService _user;
+        public ValuesController(UserService user)
+        {
+            _user = user;
+        }
         // GET api/values
-        public UserService _user;
+        
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
@@ -24,6 +32,11 @@ namespace Bigcock.AuthApi.Controllers
                 Name = "",
                 Sex = "男"
             };
+            using (var scope = Startup.AutofacContainer.BeginLifetimeScope())
+            {
+                IConfiguration config = scope.Resolve<IConfiguration>();
+                IHostingEnvironment env = scope.Resolve<IHostingEnvironment>();
+            }
             _user.AddUser(user);
             return new string[] { "value1", "value2" };
         }
