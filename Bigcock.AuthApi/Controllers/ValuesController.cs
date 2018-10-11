@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Autofac;
 using Bigcock.AuthApiCore;
 using Bigcock.Data.Models;
+using Bigcock.IModuleServices.UserManager;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -15,8 +16,8 @@ namespace Bigcock.AuthApi.Controllers
     //[Authorize] 
     public class ValuesController : ControllerBase
     {
-        private UserService _user;
-        public ValuesController(UserService user)
+        private IUserService _user;
+        public ValuesController(IUserService user)
         {
             _user = user;
         }
